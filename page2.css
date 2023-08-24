@@ -1,0 +1,123 @@
+/* This file contains CSS for page two */
+/* z-index order (low to high) -> CategoryButton -> InfoWrapper -> CategoryButton.active -> TitleRow
+/* The flex row is to account for the button column and the main content area */
+
+.BackToTop{
+	position: absolute;
+	background-color: orange;
+	height: 10%;
+	width: 10%;
+	bottom: 20%;
+	right: 2%;
+}
+
+.Page2{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: transparent;
+}
+
+.MainContent{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+	height: 85%;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+}
+
+.CategoryButtonColumn{
+	position: relative;
+	height: 100%;
+	width: 15%;
+	box-shadow: -10px 10px 15px 1px #222222;
+	background-color: white;
+}
+
+.CategoryButtonWrapper{
+	position: relative;
+	height: 10%;
+	width: 100%;
+}
+
+.CategoryButton{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #0084D7;
+	z-index: 0;
+}
+
+.HorizontalDivier{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #000;
+	margin: 0;
+}
+
+
+.InfoWrapper{
+	display: block;
+	position: relative;
+	background-color: white;
+	width: 85%;
+	height: 100%;
+	left: 0px;
+	box-shadow: -15px 10px 20px 1px #444444;
+	z-index: 1;
+	overflow: auto;
+}
+
+.Resume{
+	display: grid;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	column-gap: 0px;
+	padding: 0px;
+}
+
+.ResumeItems{
+	width: 100%;
+	text-align: left;
+	white-space: pre-line;
+	padding: 7%;
+	background-image: url("assets/images/resume_row_style.jpg");
+	background-position: center;
+	background-size: cover;
+	font-family: Helvetica, sans-serif;
+	overflow: visible;
+}
+
+.JobCategory{
+	width: fit-content;
+	background-image: url("assets/images/resume_row_category_style.jpg");
+	background-position: center;
+	background-size: cover;
+	font-family: Verdana, sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	font-style: italic;
+	filter: saturate(200%) brightness(100%);
+}
+
+.JobTitle{
+	text-align: left;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.RoleDesc{
+	float: right;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: 600;
+}

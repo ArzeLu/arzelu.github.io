@@ -1,0 +1,57 @@
+/* This file contains CSS for the main structure  */
+/* or basically anything that's not page 1 or 2 */
+
+pre{
+	white-space: pre-wrap ;
+	word-wrap: break-word;
+	text-align: justify;
+}
+
+.MainViewWrapper{
+	/* background-color: #FFA500; */
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+.BackgroundImage{
+	position: fixed; /* for some reason only fixed works. setting it to relative messes with z-index somehow */
+	height: 100%;
+	width: 100%;
+	background-image: url("assets/images/desk.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* stats to prep the background blurring  */
+	-webkit-filter: blur(0px);
+	filter: blur(0px);
+	z-index: -1;
+}
+
+/* "Position: sticky" with "top: 0" can pin the element so it doesn't move when scrolling */
+/* Z-index can only work on classes that are non-static positioned */
+/* z-index in order (low to high): button column -> button -> info -> active button -> title */
+
+.TitleRow{
+	position: sticky;
+	background-color: transparent;
+	top: 0;
+	height: 100px;
+	width:100%;
+	z-index: 3;
+}
+
+/* Making the content in this div able to overflow since it contains the main content*/
+/* The div here is below the navbar and the title row */
+.MainView{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	overflow-y: scroll;
+	/* Hide scrollbar but keep functionality for: */
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none; /* Firefox */	
+}

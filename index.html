@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<!-- Notes -->
+<!-- apparently margin auto doesn't work with position absolute -->
+
+<html lang="en">
+<head>
+	<title>Arze's Space</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<script src="assets/prism.js"></script>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+	<link rel="stylesheet" href="main_structure.css" />
+	<link rel="stylesheet" href="page1.css" />
+	<link rel="stylesheet" href="page2.css" />
+	<link rel="stylesheet" href="helpers.css" />
+	<link rel="stylesheet" href="assets/prism.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!-- additional links navbar -->
+	<nav class="navbar navbar-expand-md bg-light">
+		<!-- this section is mostly bootstrap -->
+		<div class="container-fluid">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="https://github.com/HanslyRZ">
+						Github
+						<img class="rounded-pill" src="assets/images/github_logo.png" alt="github_logo.png" style="width: 40px;">
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="https://www.linkedin.com/in/arze-lu-920b72224/">
+						linkedin
+						<img class="rounded-pill" src="assets/images/linkedin_logo.png" alt="linkedin_logo.png" style="width: 40px;">
+					</a>
+				</li>
+				<li class="nav-item mx-2">
+					<a class="nav-link" href="#">
+						HanslyBox
+						<img class="rounded-pill" src="assets/images/hanslybox_logo.png" alt="hanslybox_logo.png" style="width: 40px;">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="MainViewWrapper">
+			<div id="background" class="BackgroundImage"></div>
+			<main id="mainView" class="MainView">
+				<!-- Page 1 section -->
+				<div class="Page1">
+					<div class="TitleGridWrap">
+						<div class="TitleGrid">
+							<div class="Title">
+								<pre class="TitleText">
+								Arze Lu's
+								Code Space
+								</pre>
+							</div>
+							<div class="PFPWrapper">
+								<img class="rounded-pill PFP" src="assets/images/pfp.png" alt="profile_picture">
+							</div>
+							<button id="profileNav" type="button" class="GoToProfile">
+								Know more about me!
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Page 2 section -->
+				<div class="Page2">
+					<!-- back to top button -->
+					<button id="backTopNav" type="button" class="BackToTop">
+						Back To Top
+					</button>
+					<div class="MainContent">
+						<!-- Button Column-->
+						<div class="CategoryButtonColumn">
+							<div class="CategoryButtonWrapper">
+								<button id="b1" type="button" class="CategoryButton active">Profile</button>
+							</div>
+							<hr class="HorizontalDivier">
+							<div class="CategoryButtonWrapper">
+								<button id="b2" type="button" class="CategoryButton">Resume</button>
+							</div>
+							<hr class="HorizontalDivier">
+							<div class="CategoryButtonWrapper">
+								<button id="b3" type="button" class="CategoryButton">Projects</button>
+							</div>
+							<hr class="HorizontalDivier">
+							<div class="CategoryButtonWrapper">
+								<button id="b4" type="button" class="CategoryButton">Others(Temp)</button>
+							</div>
+							<hr class="HorizontalDivier">
+						</div>
+						<!-- Profile content-->
+						<div class="InfoWrapper" id="profilePage">
+							<div id="info_b1" class="showInfo" style="background-color: transparent; margin-left: 0px; padding: 5%;">
+								<div style="position: relative; height: 5%; width: 37%; overflow: auto; margin-left: auto; margin-right: auto;">
+									<!-- The lack of formatting here is to accomodate for PrismJs -->
+									<!-- White space between <pre> and <code> tag disrupts the display -->
+									<pre style="height: 100%; width: 100%;"><code class="language-html text-center" style="font-size: 30px;">&lt;p> Hello World! &lt;/p> Scroll to see me!</code></pre>
+								</div>
+								<p>
+								Hello! Welcome to my first ever web page that I'm so excited to show you!<br>I am Arze and I'm a student pursuing a Master's degree in Computer Science. I graduated with the Bachelor's degree just a
+								few months prior.<br>The interest in the major comes from my strong passion in crafting. As a kid, I would save any cardboard box in
+								case any idea sprung into mind. I made a L-shaped desk out of cardboard, a sword style pencil case, and a lot of toys any child would
+								dream to own. Growing up, I always struggled with acquiring the right material to build higher quality craft, just like the carousel
+								I just finished that required rubber wheels and a few electrical components. For that reason, I chose Computer Science over EE 
+								and Mechanical Engineering. I was ecstatic about the thought of building computer projects nearly without a cost. After achieving the Bachelor's, I
+								started building this website, an app, and a vpn, although only the website is at a near finished state.<br><br>
+								I have some hobbies aside from programming. I can't resist myself from playing chess whenever I have free time. It is probably the best puzzle game out there.
+								I also draw from time to time, and I try to be consistent daily with my workout routine. If it weren't for newly grow-up responsibilities, I would
+								spend all my time on the countless relatively quiescent activities.<br><br>
+								Nice to meet all of you that visited my page!<br><br>
+								On the last note, I'd like to give thanks to my family, my close friends, and my beautiful and caring girlfriend for making everything possible.
+								</p>
+							</div>
+							<div id="info_b2" class="hideInfo" style="background-color: transparent; margin-left: 0px; padding: 0px;">
+								<p style="text-align: center;">Click here for the original document: <a href="assets/docs/Arze_Lu-Resume.pdf">PDF download</a></p>
+								<!-- <object data="assets/docs/Arze_Lu-Resume.pdf" type="application/pdf" style="width: 100%; height: 100vh"> -->
+								<div class="Resume">
+									<span class="JobCategory">&nbsp;&nbsp;&nbsp;Relevant Experiences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<pre class="ResumeItems">
+									<span class="JobTitle">Plot-A-Thon Contest<span class="RoleDesc">Role: Contestant</span></span><br>
+									Won first place in the category of data storytelling using Python and the library Matplotlib to create graphs of different types.<br>
+									Won second place in the category of presentation in both the delivery and imagery.
+									</pre>
+									<pre class="ResumeItems">
+									<span class="JobTitle">Gainwell Technologies Remote<span class="RoleDesc">Role: Software Engineer Intern</span></span><br>
+									Collaborated with a mentor and his professional team to improve Medicaid software. Received dedicated healthcare training.<br>
+									Worked primarily with C and Unix, organized by GitHub with the Agile method and code review calls every morning.<br>
+									Helped with constructing header files and maintaining code structure by refactoring and other methods.
+									Learned about other departments by interviewing their leaders.
+									</pre>
+									<pre class="ResumeItems">
+									<span class="JobTitle">Stemnarts Remote</span><span class="RoleDesc">Role: Computer Science / Math tutor</span><br>
+									Made graphics to explain concepts such as pointers, arrays of different dimensions, machine language operations, etc.<br>
+									</pre>
+									<pre class="ResumeItems">
+									<span class="JobTitle">ICPC (International Collegiate Programming Contest</span><span class="RoleDesc">Role: Contestant</span><br>
+									Led a team of three, and brainstorming sessions for complex C++ coding challenges under a time constraint.<br>
+									Crafted sketches of algorithms with the team for each of the problems.<br>
+									</pre>
+									<span class="JobCategory">&nbsp;&nbsp;&nbsp;Additional Experiences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+									<pre class="ResumeItems">
+									<span class="JobTitle">Coach</span><span class="RoleDesc">Role: Support Associate</span><br>
+									Handled stocking as well as sales.<br>
+									Great team player; worked seamlessly with all the coworkers.
+									</pre>
+									<pre class="ResumeItems">
+									<span class="JobTitle">Beautiful Giant</span><span class="RoleDesc">Role: Warehouse Stocking and Distributing</span><br>
+									Very active on site: improved the long established storage system.<br>
+									Formed a good relationship with coworkers in all departments.<br>
+									Took on extra work of other departments daily.
+									</pre>
+									
+								</div>
+							</div>
+							<div id="info_b3" class="hideInfo" style="text-align: center;">
+								Coming Soon!
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<script>
+	/* Notes: */
+		/*js on scroll / click etc is safer than doing it in html (injection attack)*/
+		/* $() returns element wrapped in jQuery object; $()[0] return the DOM element itself */
+		/* () => stuff is called unnamed functions */
+		
+		var blurTracker = 0; /* Tracks how much blur is currently for two methods of blurring: scrolling / redirect button */
+		var activeButton = "#b1";
+		var activeInfo = "#info_b1";
+		var maxBlurStrength = 15;
+		
+		$(document).ready(function(){
+			var background = $("#background");
+			var element = document.getElementById("mainView"); 
+			var maxY = element.scrollHeight;
+			var clientMaxY = element.clientHeight;
+			var totalScrollable = maxY - clientMaxY;
+			
+			/* The background blurs while scrolling */
+			/* The blurring rate is the same as the scroll progress */
+			$("#mainView").on("scroll",
+				function(){
+					var y = element.scrollTop;
+					var percentScrolled = y / totalScrollable;
+					var blurRate = maxBlurStrength * percentScrolled;
+					
+					blurTracker = blurRate;
+					var property = "blur(" + blurTracker + "px)";
+					background.css({"-webkit-filter" : property, "filter" : property});
+				}
+			);
+			
+			$("#profileNav").on("click",
+				() => {
+					scrollDown();
+				}
+			);
+			
+			$("#backTopNav").on("click",
+				() => {
+					scrollUp();
+				}
+			);
+			
+			$(".CategoryButton").on("click",
+				function(){
+					let tempButton = "#" + $(this).attr("id");
+					let tempInfo = "#info_" + $(this).attr("id");
+					if(tempButton === activeButton){
+						return;
+					}
+					
+					$(tempButton).addClass("active");
+					$(activeButton).removeClass("active");
+					
+					$(tempInfo).removeClass("hideInfo").addClass("showInfo");
+					$(activeInfo).removeClass("showInfo").addClass("hideInfo");
+					
+					activeButton = tempButton;
+					activeInfo = tempInfo;
+				}
+			);
+												
+			function scrollUp(){
+				var y = element.scrollTop;
+				var scrollProcess = setInterval(scrolling, 10);
+				
+				function scrolling(){ /* set to top if script scrolled over client border */
+					if(y <= 1){
+						element.scrollTop = 0;
+						clearInterval(scrollProcess);
+					}
+					y -= 16; /* scroll down 16 at a time */
+					element.scrollTop -= 16;	
+				}
+			}
+			
+			function scrollDown() {
+				var check = false;
+				var y = element.scrollTop;
+				var scrollProcess = setInterval(scrolling, 10);
+				
+				function scrolling(){
+					if((maxY - y) <= clientMaxY){
+						clearInterval(scrollProcess);
+						element.scrollTop = clientMaxY;
+					}
+					y += 16;
+					element.scrollTop += 16;	
+				}
+			}
+		});
+	</script>
+</body>
+</html>
